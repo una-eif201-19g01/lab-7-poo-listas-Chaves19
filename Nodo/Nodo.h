@@ -20,7 +20,7 @@ public:
 
     const Vehiculo &getVehiculo();
 
-    void setLibro(const Vehiculo &vehiculo);
+    void setVehiculo(const Vehiculo &vehiculo);
 
     Nodo *getSiguiente();
 
