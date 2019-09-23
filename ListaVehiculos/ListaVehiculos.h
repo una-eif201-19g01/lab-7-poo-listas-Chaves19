@@ -14,7 +14,7 @@ class ListaVehiculos {
     Nodo *actual;
 
 public:
-    ListaLibros();
+    ListaVehiculos();
 
     virtual ~ListaVehiculos();
 
