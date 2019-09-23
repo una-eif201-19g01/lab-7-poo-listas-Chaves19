@@ -5,7 +5,7 @@
  */
 
 /* 
- * File:   Vehiculos.cpp
+ * File:   Vehiculo.cpp
  * Author: achaq
  * 
  * Created on September 22, 2019, 9:12 PM
@@ -13,12 +13,10 @@
 
 #include "Vehiculo.h"
 
-Vehiculos::Vehiculo() {
-}
+Vehiculo::Vehiculo(): id(" "), modelo(" "), anno(0), tipo(" ") {}
 
-Vehiculos::Vehiculo(const Vehiculo& orig) {
-}
+Vehiculo::Vehiculo(std::string id, std::string modelo , int anno, std::string tipo): id(id), modelo(modelo), anno(anno), tipo(tipo){}
 
-Vehiculos::~Vehiculo() {
+Vehiculo::~Vehiculo() {
 }
 

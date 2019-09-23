@@ -17,7 +17,7 @@
 class Moto {
 public:
     Moto();
-    Moto(const Moto& orig);
+    Moto(Vehiculo);
     virtual ~Moto();
 private:
 

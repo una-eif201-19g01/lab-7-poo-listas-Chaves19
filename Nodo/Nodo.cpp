@@ -1,24 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//
+// Created by Maikol Guzman  on 2019-09-16.
+//
 
-/* 
- * File:   Nodo.cpp
- * Author: achaq
- * 
- * Created on September 22, 2019, 9:15 PM
- */
 
 #include "Nodo.h"
 
-Nodo::Nodo() {
-}
+Nodo::Nodo() {}
 
-Nodo::Nodo(const Nodo& orig) {
-}
+Nodo::Nodo(const Vehiculo &vehiculo, Nodo *siguiente) : vehiculo(vehiculo), siguiente(siguiente) {}
 
 Nodo::~Nodo() {
+
 }
 
+const Vehiculo &Nodo::getVehiculo() const {
+    return vehiculo;
+}
+
+void Nodo::setVehiculo(const Vehiculo &vehiculo) {
+    Nodo::vehiculo = vehiculo;
+}
+
+Nodo *Nodo::getSiguiente() const {
+    return siguiente;
+}
+
+void Nodo::setSiguiente(Nodo *_siguiente) {
+    Nodo::siguiente = _siguiente;
+}
+
+std::string Nodo::toString() {
+    return vehiculo->toString();
+}

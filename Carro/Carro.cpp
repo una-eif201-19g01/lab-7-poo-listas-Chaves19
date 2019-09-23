@@ -16,7 +16,7 @@
 Carro::Carro() {
 }
 
-Carro::Carro(const Carro& orig) {
+Carro::Carro(Vehiculo) {
 }
 
 Carro::~Carro() {

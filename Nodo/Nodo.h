@@ -1,27 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//
+// Created by Maikol Guzman  on 2019-09-16.
+//
 
-/* 
- * File:   Nodo.h
- * Author: achaq
- *
- * Created on September 22, 2019, 9:15 PM
- */
-
-#ifndef NODO_H
-#define NODO_H
+#ifndef LAB_6_LISTAS_ENLAZADAS_NODO_H
+#define LAB_6_LISTAS_ENLAZADAS_NODO_H
+#include <ostream>
+#include "Vehiculo.h"
 
 class Nodo {
+    Vehiculo vehiculo;
+    Nodo *siguiente;
+
 public:
     Nodo();
-    Nodo(const Nodo& orig);
+
+    Nodo(const Vehiculo &vehiculo, Nodo *siguiente);
+
     virtual ~Nodo();
-private:
+
+    const Vehiculo &getVehiculo();
+
+    void setLibro(const Vehiculo &vehiculo);
+
+    Nodo *getSiguiente();
+
+    void setSiguiente(Nodo *_siguiente);
+
+    std::string toString();
 
 };
 
-#endif /* NODO_H */
 
+#endif //LAB_6_LISTAS_ENLAZADAS_NODO_H

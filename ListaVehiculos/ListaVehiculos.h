@@ -1,27 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//
+// Created by Maikol Guzman  on 2019-09-16.
+//
 
-/* 
- * File:   ListaVehiculos.h
- * Author: achaq
- *
- * Created on September 22, 2019, 9:15 PM
- */
+#ifndef LAB_6_LISTAS_ENLAZADAS_LISTAVEHICULO_H
+#define LAB_6_LISTAS_ENLAZADAS_LISTAVEHICULO_H
 
-#ifndef LISTAVEHICULOS_H
-#define LISTAVEHICULOS_H
+
+#include <ostream>
+#include "Nodo.h"
 
 class ListaVehiculos {
-public:
-    ListaVehiculos();
-    ListaVehiculos(const ListaVehiculos& orig);
-    virtual ~ListaVehiculos();
-private:
+    Nodo *primero;
+    Nodo *actual;
 
+public:
+    ListaLibros();
+
+    virtual ~ListaVehiculos();
+
+    void insertarInicio(const Vehiculo& _vehiculo);
+    void insertarFinal(const Vehiculo& _vehiculo);
+    bool eliminarInicio();
+    int totalNodos();
+    bool listaVacia();
+
+    Nodo *getPrimero();
+
+    void setPrimero(Nodo *primero);
+
+    Nodo *getActual();
+
+    void setActual(Nodo *actual);
+
+    std::string toString();
 };
 
-#endif /* LISTAVEHICULOS_H */
 
+#endif //LAB_6_LISTAS_ENLAZADAS_LISTALIBROS_H
