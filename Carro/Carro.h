@@ -15,12 +15,14 @@
 #define CARRO_H
 #include "Vehiculo.h"
 
-class Carro {
+class Carro : public Vehiculo {
+private:
 public:
     Carro();
     Carro(Vehiculo);
-    virtual ~Carro();
-private:
+    ~Carro();
+    std::string toString();
+
 
 };
 

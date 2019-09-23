@@ -19,4 +19,39 @@ Vehiculo::Vehiculo(std::string id, std::string modelo , int anno, std::string ti
 
 Vehiculo::~Vehiculo() {
 }
+virtual std::string toString(){
+    
+}
+
+void Vehiculo::setTipo(std::string tipo) {
+    this->tipo = tipo;
+}
+
+std::string Vehiculo::getTipo(){
+    return tipo;
+}
+
+void Vehiculo::setAnno(int anno) {
+    this->anno = anno;
+}
+
+int Vehiculo::getAnno(){
+    return anno;
+}
+
+void Vehiculo::setModelo(std::string modelo) {
+    this->modelo = modelo;
+}
+
+std::string Vehiculo::getModelo(){
+    return modelo;
+}
+
+void Vehiculo::setId(std::string id) {
+    this->id = id;
+}
+
+std::string Vehiculo::getId(){
+    return id;
+}
 

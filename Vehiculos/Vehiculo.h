@@ -24,8 +24,15 @@ public:
     Vehiculo();
     Vehiculo(std::string, std::string, int, std::string);
     virtual ~Vehiculo();
-    virtual float calcCosto();
     virtual std::string toString();
+    void setTipo(std::string tipo);
+    std::string getTipo();
+    void setAnno(int anno);
+    int getAnno();
+    void setModelo(std::string modelo);
+    std::string getModelo();
+    void setId(std::string id);
+    std::string getId();
 
 
 };

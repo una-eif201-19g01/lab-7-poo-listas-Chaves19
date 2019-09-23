@@ -22,3 +22,7 @@ Moto::Moto(Vehiculo) {
 Moto::~Moto() {
 }
 
+std::string Moto::toString(){
+    
+}
+

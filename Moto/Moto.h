@@ -14,12 +14,13 @@
 #ifndef MOTO_H
 #define MOTO_H
 
-class Moto {
+class Moto : public Vehiculo {
+private:
 public:
     Moto();
     Moto(Vehiculo);
-    virtual ~Moto();
-private:
+    ~Moto();
+    std::string toString();
 
 };
 

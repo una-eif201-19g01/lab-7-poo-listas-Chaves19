@@ -21,4 +21,7 @@ Carro::Carro(Vehiculo) {
 
 Carro::~Carro() {
 }
+std::string toString(){
+    
+}
 
