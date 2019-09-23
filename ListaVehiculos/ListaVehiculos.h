@@ -2,8 +2,8 @@
 // Created by Maikol Guzman  on 2019-09-16.
 //
 
-#ifndef LAB_6_LISTAS_ENLAZADAS_LISTAVEHICULO_H
-#define LAB_6_LISTAS_ENLAZADAS_LISTAVEHICULO_H
+#ifndef LAB_7_LISTAVEHICULOS_H
+#define LAB_7_LISTAVEHICULOS_H
 
 
 #include <ostream>
@@ -36,4 +36,4 @@ public:
 };
 
 
-#endif //LAB_6_LISTAS_ENLAZADAS_LISTALIBROS_H
+#endif //LAB_7_LISTAVEHICULOS_H
