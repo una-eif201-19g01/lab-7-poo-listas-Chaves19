@@ -16,7 +16,7 @@
 Carro::Carro() {
 }
 
-Carro::Carro(Vehiculo) {
+Carro::Carro(std::string id, std::string modelo, int anno, std::string tipo): Vehiculo(id, modelo, anno, tipo) {
 }
 
 Carro::~Carro() {

@@ -19,7 +19,7 @@ class Carro : public Vehiculo {
 private:
 public:
     Carro();
-    Carro(Vehiculo);
+    Carro(std::string, std::string, int, std::string);
     ~Carro();
     std::string toString();
 

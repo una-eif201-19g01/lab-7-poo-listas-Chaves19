@@ -18,7 +18,7 @@ class Moto : public Vehiculo {
 private:
 public:
     Moto();
-    Moto(Vehiculo);
+    Moto(std::string, std::string, int, std::string);
     ~Moto();
     std::string toString();
 

@@ -13,7 +13,7 @@ Nodo::~Nodo() {
 
 }
 
-const Vehiculo &Nodo::getVehiculo() const {
+const Vehiculo &Nodo::getVehiculo(){
     return vehiculo;
 }
 
@@ -21,7 +21,7 @@ void Nodo::setVehiculo(const Vehiculo &vehiculo) {
     Nodo::vehiculo = vehiculo;
 }
 
-Nodo *Nodo::getSiguiente() const {
+Nodo *Nodo::getSiguiente(){
     return siguiente;
 }
 
