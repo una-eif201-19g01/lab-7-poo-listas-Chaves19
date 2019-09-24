@@ -13,21 +13,29 @@
 
 #include "Vehiculo.h"
 
-Vehiculo::Vehiculo(): id(" "), modelo(" "), anno(0), tipo(" ") {}
+Vehiculo::Vehiculo() : id(" "), modelo(" "), anno(0), tipo(" ") {
+}
 
-Vehiculo::Vehiculo(std::string id, std::string modelo , int anno, std::string tipo): id(id), modelo(modelo), anno(anno), tipo(tipo){}
+Vehiculo::Vehiculo(std::string id, std::string modelo, int anno, std::string tipo) : id(id), modelo(modelo), anno(anno), tipo(tipo) {
+}
 
 Vehiculo::~Vehiculo() {
 }
-virtual std::string toString(){
-    
+
+virtual std::string Vehiculo::toString() {
+    std::string reporte = "";
+    reporte += "Id del vehiculo: " + getId() + "\n"
+            "Modelo del vehiculo: " + getModelo() + "\n"
+            "Anno del vehiculo: " + std::to_string(getAnno()) + "\n"
+            "Tipo del vehiculo: " + getTipo();
+    return reporte;
 }
 
 void Vehiculo::setTipo(std::string tipo) {
     this->tipo = tipo;
 }
 
-std::string Vehiculo::getTipo(){
+std::string Vehiculo::getTipo() {
     return tipo;
 }
 
@@ -35,7 +43,7 @@ void Vehiculo::setAnno(int anno) {
     this->anno = anno;
 }
 
-int Vehiculo::getAnno(){
+int Vehiculo::getAnno() {
     return anno;
 }
 
@@ -43,7 +51,7 @@ void Vehiculo::setModelo(std::string modelo) {
     this->modelo = modelo;
 }
 
-std::string Vehiculo::getModelo(){
+std::string Vehiculo::getModelo() {
     return modelo;
 }
 
@@ -51,7 +59,7 @@ void Vehiculo::setId(std::string id) {
     this->id = id;
 }
 
-std::string Vehiculo::getId(){
+std::string Vehiculo::getId() {
     return id;
 }
 

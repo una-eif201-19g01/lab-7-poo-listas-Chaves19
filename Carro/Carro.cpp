@@ -16,12 +16,19 @@
 Carro::Carro() {
 }
 
-Carro::Carro(std::string id, std::string modelo, int anno, std::string tipo): Vehiculo(id, modelo, anno, tipo) {
+Carro::Carro(std::string id, std::string modelo, int anno, std::string tipo) : Vehiculo(id, modelo, anno, tipo) {
 }
 
 Carro::~Carro() {
 }
-std::string toString(){
-    
+
+std::string Carro::toString() {
+    std::string reporte = "";
+    reporte += "Id del vehiculo: " + getId() + "\n"
+            "Modelo del vehiculo: " + getModelo() + "\n"
+            "Anno del vehiculo: " + std::to_string(getAnno()) + "\n"
+            "Tipo del vehiculo: " + getTipo();
+    return reporte;
+
 }
 
